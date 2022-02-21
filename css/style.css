@@ -3,6 +3,12 @@ header {
     align-items: center;
     box-shadow: 0 4px 4px rgb(0 0 0 / 4%);
     padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
 }
 .header-content {
     max-width: 1200px;
@@ -29,12 +35,17 @@ header {
     text-transform: uppercase;
 
 }
+.header-content .logo img {
+    height: 64px;
+}
 /* Header End */
 
 /* Proposition Start */
 .proposition-wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 100px !important; 
+    margin-bottom: 20px;
 }
 .proposition-title {
     text-align: center;
@@ -65,6 +76,7 @@ header {
     border-radius: 10px;
     padding: 15px 17px 20px 17px;
     font-family: 'Roboto', serif;
+    margin: 0 10px 20px 10px;
 }
 .proposition-wrapper .proposition-content article .proposition-notification {
     padding: 15px 0;
@@ -97,8 +109,165 @@ header {
 }
 .proposition-wrapper .proposition-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+
+}
+.proposition-wrapper .proposition-alert {
+    padding: 10px 0;
+    color: red;
+}
+.proposition-request {
+    margin-top: 20px;
+    background-color: #6094E0;
+    border: 1px solid #6094E0;
+    padding: 20px 10px;
+    color: #fff;
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.proposition-request:hover {
+    color: #6094E0;
+    background-color: transparent;
 }
 /* Proposition End */
+
+/* Order Start */
+.order-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.order-wrapper .order-content {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.order-wrapper .order-title h3 {
+    font-family: 'Roboto', serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.order-wrapper .order-content article h3 {
+    font-size: 20px;
+    font-family: 'Roboto', serif;
+    font-weight: bold;
+
+}
+.order-wrapper .order-content article svg {
+    margin-bottom: 10px;
+}
+.order-wrapper .order-content article {
+    margin-bottom: 20px;
+}
+.order-wrapper .order-content article p {
+    margin-top: 10px;
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 26px;
+}
+/* Order End */
+
+/* Requirements Start */
+.requirements-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.requirements-wrapper .requirements-title {
+    margin-bottom: 30px;
+}
+.requirements-wrapper .requirements-title h3, .title {
+    font-family: 'Roboto', serif;
+    font-size: 30px !important;
+    text-transform: uppercase;
+}
+.requirements-wrapper article h3  {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', serif;
+    margin-top: 20px;
+}
+/* Requirements End */
+
+/* Instruction Start */
+.instruction-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.instruction-wrapper img {
+    width: 100%;
+}
+.instruction-wrapper .instruction-title h4 {
+    font-family: 'Roboto', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.instruction-wrapper .instruction-title {
+    margin-bottom: 30px;
+}
+.instruction-wrapper .insruction-content article {
+    margin-bottom: 30px;
+}
+.instruction-wrapper .insruction-content article h4 {
+    font-size: 20px ;
+    font-family: 'Roboto', serif;
+    font-weight: bold;
+}
+.instruction-wrapper .insruction-content article p {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    line-height: 25px;
+}
+/* Instruction End */
+
+/* Examples Start */
+.examples-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.examples-content {
+    margin-top: 50px;
+}
+.examples-wrapper .examples-content article h5 {
+    font-family: 'Roboto', serif;
+    color: #6094E0;
+    margin: 0px 0 10px 0 !important;
+    font-size: 21px;
+}
+.examples-wrapper .examples-content article {
+    padding: 15px;
+    border: 1px solid #6294D2;
+    border-radius: 20px;
+}
+.examples-wrapper .examples-content article p.examples-address {
+    color: #000;
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: bold !important;
+}
+.examples-phone a {
+    border-bottom: 1px solid #6094E0;
+    padding: 0;
+    display: inline-block;
+}
+.examples-wrapper .examples-content article p:not(.examples-phone) {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    line-height: 25px;
+}
+.examples-wrapper .examples-content article p {
+    margin-bottom: 10px;
+}
+
+/* Examples End */
