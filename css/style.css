@@ -234,20 +234,30 @@ header {
 .examples-wrapper {
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 .examples-content {
     margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .examples-wrapper .examples-content article h5 {
     font-family: 'Roboto', serif;
     color: #6094E0;
     margin: 0px 0 10px 0 !important;
     font-size: 21px;
+    line-height: 25px;
 }
 .examples-wrapper .examples-content article {
     padding: 15px;
     border: 1px solid #6294D2;
     border-radius: 20px;
+    margin: 0 10px;
+    margin-bottom: 30px;
+    width: 31%;
+    box-sizing: border-box;
 }
 .examples-wrapper .examples-content article p.examples-address {
     color: #000;
@@ -271,3 +281,35 @@ header {
 }
 
 /* Examples End */
+
+/* Information Start */
+.info-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.info-wrapper article:nth-child(even) {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+.info-wrapper article:nth-child(odd) {
+    padding-right: 20px;
+}
+.info-wrapper h6 {
+    font-family: 'Roboto', serif;
+    font-weight: bold;
+}
+.info-wrapper p {
+    font-family: 'Roboto', serif;
+    line-height: 25px;
+    font-weight: 300;
+}
+/* Information End */
+
+/* Copy Start */
+.copy {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+/* Copy End */
