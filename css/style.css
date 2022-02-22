@@ -47,6 +47,9 @@ header {
     margin-top: 100px !important; 
     margin-bottom: 20px;
 }
+.proposition-wrapper img {
+    width: auto;
+}
 .proposition-title {
     text-align: center;
     max-width: 800px;
@@ -66,7 +69,10 @@ header {
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    font-weight: 300;
+    font-weight: 300 !important;
+}
+.proposition-wrapper .proposition-content .proposition-mobile {
+    font-weight: 300 !important;
 }
 .proposition-wrapper .proposition-content article {
     border: 1px solid #6294D2;
@@ -96,6 +102,7 @@ header {
 }
 .proposition-content article .proposition-char .char p i {
     margin-right: 5px;
+    color: #6094E0;
 }
 .proposition-content article .proposition-char .char p {
     font-family: 'Roboto', serif;
@@ -165,7 +172,7 @@ header {
     margin-bottom: 10px;
 }
 .order-wrapper .order-content article {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .order-wrapper .order-content article p {
     margin-top: 10px;
@@ -187,8 +194,9 @@ header {
 }
 .requirements-wrapper .requirements-title h3, .title {
     font-family: 'Roboto', serif;
-    font-size: 30px !important;
+    font-size: 30px;
     text-transform: uppercase;
+    padding: 0 30px;
 }
 .requirements-wrapper article h3  {
     font-size: 20px;
@@ -254,7 +262,6 @@ header {
     padding: 15px;
     border: 1px solid #6294D2;
     border-radius: 20px;
-    margin: 0 10px;
     margin-bottom: 30px;
     width: 31%;
     box-sizing: border-box;
@@ -313,3 +320,159 @@ header {
     padding-bottom: 30px;
 }
 /* Copy End */
+
+/* Top Start */
+.top-wrapper {
+    background-color: #6094E0;
+    border-radius: 50%;
+    padding: 5px;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+.top-wrapper img {
+    width: 100%;
+}
+/* Top End */
+
+/* Media Start */
+@media all and (max-width: 1200px) {
+    header .header-content {
+        padding: 0 30px;
+    }
+    .proposition-wrapper .proposition-content {
+        padding: 0 30px
+    }
+    .order-wrapper .order-content {
+        padding: 0 30px;
+    }
+    .requirements-wrapper {
+        padding: 0 30px;
+    }
+    .instruction-wrapper .insruction-content {
+        padding: 0 30px;
+    }
+    .examples-wrapper .examples-content {
+        padding: 0 30px;
+    }
+    .info-wrapper {
+        padding: 0 30px;
+    }
+    .proposition-title {
+        padding: 0 30px;
+    }
+}
+@media all and (max-width: 1100px) {
+    .proposition-wrapper .proposition-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .proposition-wrapper .proposition-content article {
+        width: 30%;
+    }   
+}
+@media all and (max-width: 1000px) {
+    .requirements-wrapper article {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+@media all and (max-width: 850px) {
+    .proposition-wrapper .proposition-content article {
+        width: 48%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .examples-wrapper .examples-content article {
+        width: 48%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 600px) {
+    .order-wrapper .order-content article {
+        text-align: center;
+    }
+    .info-wrapper article {
+        padding: 0 !important;
+        margin-bottom: 20px;
+    }
+}
+@media all and (max-width: 550px) {
+    .examples-wrapper .examples-content article {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 500px) {
+    .proposition-content article .proposition-char .char span {
+        font-weight: 300;
+        font-size: 15px;
+    }
+    .proposition-content article img {
+        width: 100%;
+    }
+    .proposition-wrapper .proposition-content article {
+        width: 49%;
+    }
+    .proposition-wrapper .proposition-content {
+        padding: 0 10px;
+    }
+    .proposition-title h2 {
+        font-size: 25px;
+    }
+    .requirements-wrapper article {
+        margin-bottom: 50px;
+    }
+    .proposition-title p {
+        font-size: 16px;
+    }
+    .proposition-wrapper .proposition-content article {
+        margin-bottom: 10px;
+    }
+    .proposition-title, .header-content, .order-wrapper .order-content, .requirements-wrapper, .instruction-wrapper .insruction-content, .examples-content, .info-wrapper {
+        padding: 0 10px !important;
+    }
+    .order-title h3, .requirements-title h3, .instruction-wrapper .instruction-title h4, .title {
+        font-size: 25px !important;
+        padding: 0 10px;
+    }
+    .requirements-wrapper article h3 {
+        font-size: 18px;
+    }
+    .info-wrapper article {
+        padding: 0 !important;
+        margin-bottom: 20px;
+    }
+}
+@media all and (max-width: 450px) {
+    .logo-subtitle {
+        display: none;
+    }
+}
+@media all and (max-width: 370px) {
+    .proposition-wrapper .proposition-content article {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .proposition-content article img {
+        width: auto;
+    }
+    .hide-on-small-only {
+        display: inline-block; 
+    }
+    .proposition-mobile.hide-on-small-only {
+        display: block !important;
+    }
+    .proposition-content article .proposition-char .char p {
+        display: flex;
+    }
+}
+
+/* Media End */
